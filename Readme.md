@@ -31,5 +31,8 @@ For development purposes, we need to trick our local machine into connecting to 
 ``127.0.0.1 posts.com``
 
 
-Use skaffold to watch all the yaml files in ``/infra/k8s/``.
+Use ``skaffold.yaml`` to watch all the yaml files in ``/infra/k8s/``.
 Whenever there are changes in those files, skaffold will auto reapply the config files for our kubernetes cluster.
+
+Start up skaffold:
+``skaffold dev``
