@@ -1,16 +1,16 @@
 ### Build an image using Docker
 ```
-docker build -t your-username/event-bus .
+docker build -t your-image-tag .
 ```
 
 ### Push the image to Docker Hub
 ```
-docker push your-username/event-bus
+docker push your-image-tag
 ```
 
 ### Create a deployment
 ```
-kubectl apply -f event-bus-depl.yaml
+kubectl apply -f some-service-depl.yaml
 ```
 The config file also creates Cluster IP Services.
 
@@ -42,7 +42,7 @@ For development purposes, we need to trick our local machine into connecting to 
 code /etc/hosts
 ```
 by adding a line at the bottom:
-``127.0.0.1 posts.com``
+``127.0.0.1 your-host-name``
 
 
 ### Skaffold
