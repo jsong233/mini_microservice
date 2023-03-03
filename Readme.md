@@ -22,14 +22,26 @@ Each Pod has an associated Cluster IP Service. The service inside the Pod makes 
 ```
 
 
-### Update image used by a deployment
+### Update Image
+
+To update an image used by a deployment, follow the pipeline:
+
+
 Build the image -> Push the image to the Docker Hub -> Run the following command
+
 ```
 kubectl rollout restart deployment [depl_name]
 ```
 
-### Wire it up with the React app
-React App running in browser -> Load Balancer (getting traffic into the cluster) -> Ingress Controller (a set of routing rules) -> Cluster IP Services -> different Pods
+### Wire It Up 
+
+Now we wire everything up with our React app, following the pipeline:
+
+React App running in browser 
+-> Load Balancer (getting traffic into the cluster) 
+-> Ingress Controller (a set of routing rules) 
+-> Cluster IP Services 
+-> different Pods
 
 
 ### Ingress Controller
