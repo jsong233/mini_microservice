@@ -1,11 +1,11 @@
 ### Build an image using Docker
 ```
-docker build -t jsong233/event-bus .
+docker build -t your-username/event-bus .
 ```
 
 ### Push the image to Docker Hub
 ```
-docker push jsong233/event-bus
+docker push your-username/event-bus
 ```
 
 ### Create a deployment
